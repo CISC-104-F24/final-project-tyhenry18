@@ -420,6 +420,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8384927043338249227, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 543204033}
+    - targetCorrespondingSourceObject: {fileID: 8384927043338249227, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 543204028}
     - targetCorrespondingSourceObject: {fileID: 1060673557594994822, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
       insertIndex: -1
       addedObject: {fileID: 645300125}
@@ -433,6 +439,36 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 645300122}
   m_SourcePrefab: {fileID: 100100000, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
+--- !u!1 &543204027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8384927043338249227, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
+  m_PrefabInstance: {fileID: 543204026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &543204028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543204027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a943937cf541d44ab0a2336061d3226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &543204033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543204027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7cdf3ffaa010c499948e9122cdbedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLimit: 30
 --- !u!1 &645300120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1060673557594994822, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
@@ -5380,6 +5416,97 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1001 &1390365811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.62523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.55
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4394796
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 51.354683
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.092212506
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99573934
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -190.582
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      propertyPath: m_Name
+      value: PikachuF (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1390365813}
+  m_SourcePrefab: {fileID: 100100000, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+--- !u!1 &1390365812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3845a44474dcec04a8af2c21fedd61f8, type: 3}
+  m_PrefabInstance: {fileID: 1390365811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390365813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390365812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57abc7508469bc24f83091b25f7d3036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonBase: {fileID: 0}
+  level: 10
 --- !u!4 &1558354763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3595080940999683429, guid: 36eef524d19dfa94e845fcc3020f6856, type: 3}
@@ -5579,3 +5706,4 @@ SceneRoots:
   - {fileID: 543204026}
   - {fileID: 1156237198}
   - {fileID: 2008258872}
+  - {fileID: 1390365811}
