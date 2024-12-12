@@ -1,18 +1,28 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateMachine : MonoBehaviour
+/// <summary>
+/// A generic state machine to handle transitions and execution of states.
+/// </summary>
+public class StateMachine<T>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Reference to the owner of the state machine.
+    private T owner;
 
-    // Update is called once per frame
-    void Update()
+    // The current active state.
+    private State<T> currentState;
+
+    // The previous state (optional, for transitions back to the last state).
+    private State<T> previousState;
+
+    /// <summary>
+    /// Constructor for the StateMachine.
+    /// </summary>
+    /// <param name="owner">The object that owns this state machine.</param>
+    public StateMachine(T owner)
     {
-        
+        this.owner = owner;
     }
 }
+

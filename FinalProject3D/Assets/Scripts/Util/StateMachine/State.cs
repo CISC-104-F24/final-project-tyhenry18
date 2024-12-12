@@ -1,36 +1,29 @@
-using GDEUtils.StateMachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FreeRoamState : State<GameController>
+namespace GDEUtils.StateMachine
 {
-    public static FreeRoamState i { get; private set; }
-    private void Awake()
+    /// <summary>
+    /// Base class for implementing states in a state machine.
+    /// </summary>
+    /// <typeparam name="T">The type of the owner object this state will operate on.</typeparam>
+    public class State<T> : MonoBehaviour
     {
-        i = this;
-    }
+        /// <summary>
+        /// Called when the state is entered.
+        /// </summary>
+        /// <param name="owner">The object owning the state machine.</param>
+        public virtual void Enter(T owner) { }
 
-    GameController gc;
-    public override void Enter(GameController owner)
-    {
-        gc = owner;
+        /// <summary>
+        /// Called every frame while the state is active.
+        /// </summary>
+        public virtual void Execute() { }
 
-        Debug.Log("Entered FreeRoam State");
-    }
-
-    public override void Execute()
-    {
-        Debug.Log("Executing FreeRoam State");
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            gc.StateMachine.ChangeState(DialogueState.i);
-        }
-    }
-
-    public override void Exit()
-    {
-        Debug.Log("Exiting FreeRoam State");
+        /// <summary>
+        /// Called when the state is exited.
+        /// </summary>
+        public virtual void Exit() { }
     }
 }
