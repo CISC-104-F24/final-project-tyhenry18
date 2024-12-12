@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using System.Linq;
 
 [System.Serializable]
 public class Pokemon
@@ -9,12 +9,14 @@ public class Pokemon
     [SerializeField] PokemonBase _base;
     [SerializeField] int level;
 
-    public int Hp { get; private set; }
-    public List<Move> Moves { get; private set; }
+    public int Hp { get; set; }
+    public List<Move> Moves { get; set; }
 
-    public void Init()
+    public void Init(PokemonBase pokemonBase, int level)
     {
-        Hp = MaxHp;  // Initialize HP based on MaxHp
+        _base = pokemonBase;  // Initialize the base Pokemon
+        this.level = level;  // Set the level
+        Hp = MaxHp;
 
         // Generate the moves based on the level
         Moves = new List<Move>();
@@ -33,9 +35,7 @@ public class Pokemon
     public int SpAttack => Mathf.FloorToInt((_base.SpAttack * level) / 100) + 5;
     public int SpDefense => Mathf.FloorToInt((_base.SpDefense * level) / 100) + 5;
     public int Speed => Mathf.FloorToInt((_base.Speed * level) / 100) + 5;
-
-    // MaxHp formula can be adjusted for more accuracy
-    public int MaxHp => Mathf.FloorToInt((_base.MaxHp * level) / 100f) + 10;
+    public int MaxHp => Mathf.FloorToInt((_base.MaxHp * level) / 100) + 10;
 
     public PokemonBase Base => _base;
     public int Level => level;

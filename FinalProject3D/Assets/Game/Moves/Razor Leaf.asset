@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4502e8b15e7ce5642b7d7181532e9418, type: 3}
   m_Name: Razor Leaf
   m_EditorClassIdentifier: 
-  name: 
+  name: Razor Leaf
   description: 
-  type: 0
-  power: 0
-  accuracy: 0
-  maxPP: 0
+  type: 5
+  power: 55
+  accuracy: 95
+  maxPP: 25

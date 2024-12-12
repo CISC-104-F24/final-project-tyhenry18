@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98fc968b01de2e4e82036aac51a5571, type: 3}
   m_Name: Bulbasaur
   m_EditorClassIdentifier: 
-  name: 
+  name: Bulbasaur
   description: 
-  model: {fileID: 0}
-  type1: 0
-  type2: 0
-  maxHp: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
-  learnableMoves: []
+  model: {fileID: 919132149155446097, guid: 5657555fe2fbf954889027fdd2658365, type: 3}
+  type1: 5
+  type2: 8
+  maxHp: 45
+  attack: 49
+  defense: 49
+  spAttack: 65
+  spDefense: 65
+  speed: 42
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: c6f8ac8543510fe42939088e9bef6145, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a0531ba0ec0878f46a60ab7764c3ba36, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 13fc8099a7b6fff4c966e947332853ce, type: 2}
+    level: 12
